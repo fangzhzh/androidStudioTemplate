@@ -44,8 +44,11 @@ public class ${className}View extends LinearLayout{
         mProgress.hide();
     }
 
+    /**
+     * @see UserComponent
+     * todo: ${component} extends ${className}View.Injector
+     */
     public interface Injector {
-		// todo: ${component} extends ${className}View.Injector
         void inject(${className}View view);
     }
 }

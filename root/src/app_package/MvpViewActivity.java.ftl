@@ -6,7 +6,6 @@ import com.shopee.app.appuser.UserComponent;
 import com.shopee.app.ui.actionbar.ActionBar;
 import com.shopee.app.ui.base.BaseActionActivity;
 import com.shopee.app.util.HasComponent;
-
 import org.androidannotations.annotations.EActivity;
 
 @EActivity
@@ -36,6 +35,10 @@ public class ${className}Activity extends BaseActionActivity implements HasCompo
     public ${component} getComponent() {
         return mComponent;
     }
+    /**
+     * @see ${component}
+	 * todo: ${component} extends ${className}Activity.Injector
+     */
     public interface Injector {
 		// todo: ${component} extends ${className}Activity.Injector
         void inject(${className}Activity view); 
